@@ -71,9 +71,9 @@ def search_ivf(db_path: str, index_dir: str, buckets_dir: str, centroids_path: s
     if num_records <= 1_500_000:
         max_vectors = 30_000
     elif num_records <= 12_000_000:
-        max_vectors = 55_000
+        max_vectors = 50_000
     else:
-        max_vectors = 80_000
+        max_vectors = 70_000
 
     # Each block: at most max_span_rows * DIM * 4 bytes
     # 2048 * 64 * 4 ≈ 0.5 MB per block
