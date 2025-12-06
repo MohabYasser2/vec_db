@@ -1,2 +1,2 @@
-numpy
-memory-profiler
+numpy>=1.24.0
+sentence-transformers>=2.2.0
